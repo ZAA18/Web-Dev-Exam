@@ -5,44 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta name="description" content="Welcome to Zubuhle Nel's portfolio website">
     <title>PORTFOLIO HOMEPAGE</title>
-     <link rel="stylesheet" href="/Portfolio root/css/style.css">
+    <script src="/Portfolio root/Scripts javascript/navigation.js" defer> </script>
+    <script src="/Portfolio root/Scripts javascript/home.js" defer></script>
+     <link rel="stylesheet" href="/Portfolio root/css/home.css">
+     <link rel = "stylesheet" href="/Portfolio root/css/navigation.css">
+     
 
 </head>
 <body>
-   <header>
-         <div class ="logo"> site Logo</div>
+   <header class = "navbar">
+
+         <div class ="logo- container">
+              <img src = "Assets/Images/za without.png">
+         </div>
 
          <nav>
             <ul class = "nav-links">
-                <li><button id = "homeBtn">Home</button></li>
-                <li><button id = "aboutBtn">About</button></li>
-                <li><button id ="projectsBtn"> Projects</button></li>
-                <li><button id = " contactBtn">Contact</button></li>
+                <li id = "homeBtn">Home</li>
+                <li id = "aboutBtn">About</li>
+                <li id ="projectsBtn">Projects</li>
+                <li id = " contactBtn">Contact</li>
             </ul>
         </nav>
 
+        <div class = "social-links">
+            <img src = "Assets/Images/github-sign.png"
+                id="githubBtn"
+                alt="GitHub">
+            <img src = "Assets/Images/linkedin (1).png"
+                 id="linkedinBtn"
+                 alt = "linkedIn">
+            <img src="Assets/Images/itch_io_logo_icon_145157.png"
+                 id="itchbtn"
+                 alt = "Itch.io">
+        </div>
         </header>
-
-        <main>
+<!-- Hero Section -->
+ <Section class = "hero">
+        
             <h1>Zubuhle Nel</h1>
             <h2>Game Develop | Web Developer | Software Developer</h2>
 
             <p>
                 I build interactive experiences and responsive web applications using modern technologies
             </p>
-        </main>
+        
+        <div class= "hero-buttons">
+            <button id = " viewProjectsBtn"> View My projects </button>
+             <button id = "aboutBtn"> AboutMe</button>
+        </div>
+    
 
-            <div class = "social-links">
-                <img src = "Assets/Images/github-sign.png"
-                    id="githubBtn"
-                    alt="GitHub">
-                <img src = "Assets/Images/linkedin (1).png"
-                     id="linkedinBtn"
-                     alt = "linkedIn">
-                <img src="Assets/Images/itch_io_logo_icon_145157.png"
-                     id="itchbtn"
-                     alt = "Itch.io">
-            </div>
+          
             
        
 </body>
