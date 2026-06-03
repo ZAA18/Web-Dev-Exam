@@ -1,3 +1,37 @@
 *{
-    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 60px;
+}
+
+.logo {
+    height: 70px;
+}
+
+.nav-links{
+display: flex;
+list-style: none;
+gap: 40px;
+}
+
+.nav-links li{
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.nav-links li{
+    display: flex;
+    gap: 15px;
+}
+
+.social-links img{
+    width: 30px;
+    cursor: pointer;
 }
