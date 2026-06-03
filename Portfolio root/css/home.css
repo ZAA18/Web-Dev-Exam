@@ -1,6 +1,11 @@
+background{
+    color: #f39530;
+}
 
 body{
     font-family:Arial, sans-serif;
+    background-color: #f39530 ;
+    color: #151718;
 }
 
 .hero{
@@ -34,12 +39,13 @@ body{
 
 .hero-image{
     text-align:center;
-    margin-top:40px;
+    margin-top:20px;
 }
 
 .hero-image img{
-    width:70%;
-    max-width:900px;
+    width:90%;
+    max-width:200px; 
+    height: auto; 
     border-radius:15px;
    
 }
