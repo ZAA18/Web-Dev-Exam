@@ -125,7 +125,7 @@ function showSuccess(element, errorId)
 
 firstName.addEventListener("input", validateFirstName);
 lastName.addEventListener("input", validateLastName);
-email.addEventListener("input",validateSubject);
+email.addEventListener("input",validateEmail);
 subject.addEventListener("input", validateSubject);
 message.addEventListener("input", validateMessage);
 
