@@ -1,17 +1,21 @@
-.about
-{
+body{
+    font-family:Arial, sans-serif;
+    background-color: #f39530 ;
+    color: #151718;
+}
+
+
+.about{
 width: 100%;
 margin-top: 50px;
 }
 
-.about h1
-{
+.about h1{
 text-align: center;
 margin-bottom: 50px;
 }
 
-.about-container
-{
+.about-container{
 display: flex;
 
 justify-content: center;
@@ -26,13 +30,11 @@ margin: 0 auto;
 
 }
 
-.profile-container
-{
+.profile-container{
 flex-shrink: 0;
 }
 
-.profile-container img
-{
+.profile-container img{
 width: 500px;
 height: 450px;
 
@@ -40,13 +42,11 @@ object-fit: cover;
 
 }
 
-.about-text
-{
+.about-text{
 width: 700px;
 }
 
-.about-text p
-{
+.about-text p{
 margin-bottom: 30px;
 line-height: 1.8;
 }
@@ -61,8 +61,7 @@ margin-top: 60px;
 
 }
 
-.career-goals p
-{
+.career-goals p{
 max-width: 900px;
 
 margin: 0 auto;
@@ -71,8 +70,7 @@ margin: 0 auto;
 
 /* Skills */
 
-.skills
-{
+.skills{
 text-align: center;
 
 margin-top: 60px;
@@ -91,8 +89,20 @@ margin-top: 20px;
 /* Footer */
 
 footer{
-margin-top: 80px;
+    text-align:center;
 
-text-align: center;
+    margin-top:80px;
 
+    padding:30px;
+
+    border-top:1px solid #ccc;
+}
+
+.footer-socials{
+    margin:20px 0;
+}
+
+.footer-socials button{
+    margin:5px;
+    padding:10px 20px;
 }
