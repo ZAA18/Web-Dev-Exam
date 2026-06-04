@@ -1,0 +1,119 @@
+.contact-container{
+    width: 900px;
+    margin: 40px auto;
+}
+
+.contact-container h1
+{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+}
+
+.contact-grid
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px 100px;
+}
+
+.form-group
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label
+{
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.form-group input
+{
+    width: 100%;
+    height: 40px;
+    border: none;
+    background: #d9d9d9;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.message-group
+{
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+}
+
+.message-group label
+{
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.message-group textarea
+{
+    width: 100%;
+    height: 220px;
+    border: none;
+    background: #d9d9d9;
+    resize: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.submit-container
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+/*#submitBtn
+{
+    width: 110px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background: #d9d9d9;
+    cursor: pointer;
+}
+    */
+    #submitBtn
+{
+    display: block;
+    margin: 25px auto 0;
+    width: 110px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background: #d9d9d9;
+    cursor: pointer;
+}
+
+#submitBtn:hover
+{
+    transform: scale(1.05);
+}
+
+/* Footer */
+
+footer{
+    text-align:center;
+
+    margin-top:80px;
+
+    padding:30px;
+
+    border-top:1px solid #ccc;
+}
+
+.footer-socials{
+    margin:20px 0;
+}
+
+.footer-socials button{
+    margin:5px;
+    padding:10px 20px;
+}
