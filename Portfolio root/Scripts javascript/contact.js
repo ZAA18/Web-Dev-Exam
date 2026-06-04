@@ -13,14 +13,14 @@ function validateFirstName()
 
     if (value.length < 2)
     {
-        showError(firstName, "firstNameError", "First name must be at least 2 characters.");
+        ShowError(firstName, "firstNameError", "First name must be at least 2 characters.");
 
         return false;
     }
 
     if(!namePattern.test(value))
     {
-        showError(firstName, "firstNameError", "Letters only.");
+        ShowError(firstName, "firstNameError", "Letters only.");
 
         return false;
     }
@@ -36,14 +36,14 @@ function validateLastName()
 
     if(value.length < 2)
     {
-        showError(lastName, "lastNameError", "Last name must be at least 2 characters");
+        ShowError(lastName, "lastNameError", "Last name must be at least 2 characters");
 
         return false;
     }
 
     if(!namePattern.test(value))
     {
-        showError(lastName, "lastNameError", "Letters only.");
+        ShowError(lastName, "lastNameError", "Letters only.");
         return false;
     }
 
@@ -59,7 +59,7 @@ function validateEmail()
 
     if(!emailPattern.test(value))
     {
-        showError( email, "emailError", "emailError", "Use Gmail, Outlook or iCloud.");
+        ShowError( email, "emailError", "emailError", "Use Gmail, Outlook or iCloud.");
 
         return false;
     }
@@ -74,7 +74,7 @@ function validateSubject()
 
     if (value.length<5)
     {
-        showError(subject, "subjectError", "Subject must be at least 5 characters.");
+        ShowError(subject, "subjectError", "Subject must be at least 5 characters.");
         return false;
     }
 
@@ -88,14 +88,14 @@ function validateMessage()
 
     if(value.length === 0)
     {
-        showError(message, "messageError", "Message cannot be empty.")
+        ShowError(message, "messageError", "Message cannot be empty.")
 
         return false;
     }
 
     if(value.length > 500)
     {
-        showError(message, "messageError", "Maximum 500 characters.");
+        ShowError(message, "messageError", "Maximum 500 characters.");
         return false;
     }
 
@@ -132,7 +132,7 @@ message.addEventListener("input", validateMessage);
 form.addEventListener("submit", function(event)
 {
 event.preventDefault();
-const isValid = validateFirstname() && validateLastName() && validateEmail() && validateSubject() && validateMessage();
+const isValid = validateFirstName() && validateLastName() && validateEmail() && validateSubject() && validateMessage();
 if (isValid)
     {alert("form submitted successfully!");} 
 });
