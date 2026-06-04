@@ -50,6 +50,7 @@
 {
     margin-bottom: 8px;
     font-size: 14px;
+
 }
 
 .message-group textarea
@@ -63,6 +64,27 @@
     box-sizing: border-box;
 }
 
+/* error messgae css */
+.error
+{
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    min-height: 15px;
+}
+
+.valid
+{
+    border: 2px solid green !important;
+}
+
+.invalid
+{
+    border: 2px solid red !important;
+}
+
+/* error messgae css */
+
 .submit-container
 {
     display: flex;
@@ -70,16 +92,6 @@
     margin-top: 25px;
 }
 
-/*#submitBtn
-{
-    width: 110px;
-    height: 40px;
-    border: none;
-    border-radius: 10px;
-    background: #d9d9d9;
-    cursor: pointer;
-}
-    */
     #submitBtn
 {
     display: block;
@@ -91,6 +103,7 @@
     background: #d9d9d9;
     cursor: pointer;
 }
+
 
 #submitBtn:hover
 {
