@@ -1,5 +1,5 @@
 document.getElementById("homeBtn").addEventListener("click", () =>
-     {window.location.href = "/Portfolio root/index.html";});
+     {window.location.href = "Index.html";});
 
 document.getElementById("aboutBtn").addEventListener("click", () =>
 {window.location.href= "/Portfolio root/Pages/about.html";});
