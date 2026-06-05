@@ -2,13 +2,13 @@ document.getElementById("homeBtn").addEventListener("click", () =>
      {window.location.href = "index.html";});
 
 document.getElementById("aboutBtn").addEventListener("click", () =>
-{window.location.href= "/Portfolio root/Pages/about.html";});
+{window.location.href= "./Portfolio root/Pages/about.html";});
 
 document.getElementById("projectsBtn").addEventListener("click", ()=>
-{window.location.href = "/Portfolio root/Pages/projects.html";});
+{window.location.href = "./Portfolio root/Pages/projects.html";});
 
 document.getElementById("contactBtn").addEventListener("click", ()=> 
-{window.location.href = "/Portfolio root/Pages/contact.html";});
+{window.location.href = "./Portfolio root/Pages/contact.html";});
 
 document.getElementById("githubBtn").addEventListener("click", ()=> 
 {window.open("http://github.com/ZAA18", "_blank");});
