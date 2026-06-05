@@ -1,0 +1,122 @@
+
+body{
+    font-family:Arial, sans-serif;
+    background-color: #f39530 ;
+    color: #151718;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.projects-container
+{
+    width: 90%;
+    max-width: 1400px;
+
+    margin: 50px auto;
+}
+
+.projects-container h1
+{
+    text-align: center;
+
+    margin-bottom: 50px;
+
+    font-size: 40px;
+}
+
+.projects-grid
+{
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 40px;
+}
+
+.project-card
+{
+    display: flex;
+
+    flex-direction: column;
+}
+
+.project-image
+{
+    width: 100%;
+    height: 220px;
+
+    object-fit: cover;
+
+    background: #d9d9d9;
+
+    border-radius: 10px;
+}
+
+.project-card h2
+{
+    text-align: center;
+
+    margin-top: 20px;
+
+    font-size: 20px;
+}
+
+.project-card p
+{
+    line-height: 1.5;
+
+    text-align: left;
+}
+
+.button-group
+{
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    margin-top: auto;
+}
+
+.project-btn
+{
+    border: none;
+
+    border-radius: 20px;
+
+    padding: 10px 20px;
+
+    background: #d9d9d9;
+
+    cursor: pointer;
+}
+
+.project-btn:hover
+{
+    transform: scale(1.05);
+}
+
+footer{
+    text-align:center;
+
+    margin-top:80px;
+
+    padding:30px;
+
+    border-top:1px solid #ccc;
+}
+
+.footer-socials{
+    margin:20px 0;
+}
+
+.footer-socials button{
+    margin:5px;
+    padding:10px 20px;
+}
