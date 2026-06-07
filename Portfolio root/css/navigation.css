@@ -34,8 +34,49 @@ gap: 40px;
     display: flex;
     gap: 15px;
 }
+    
+.nav-links li {
+        position: relative;
+        cursor: pointer;
+        font-size: 18px;
+        transition: color 0.3s ease;
+ }
+    
+.nav-links li::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 0%;
+        height: 2px;
+        background-color: rgb(138, 15, 15);
+        transition: width 0.3s ease;
+ }
+    
+.nav-links li:hover::after {
+        width: 100%;
+}
+
+.nav-links li.active {
+    font-weight: bold;
+}
+
+.nav-links li.active::after {
+    width: 100%;
+}
+
 
 .social-links img{
     width: 30px;
     cursor: pointer;
+}
+
+.social-links img {
+    width: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+    transform: translateY(-3px);
 }
