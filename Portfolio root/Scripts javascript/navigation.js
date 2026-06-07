@@ -9,15 +9,7 @@ document.getElementById("projectsBtn").addEventListener("click", ()=>
 
 document.getElementById("contactBtn").addEventListener("click", ()=> 
 {window.location.href = "./Portfolio root/Pages/contact.html";});
-
-document.getElementById("githubBtn").addEventListener("click", ()=> 
-{window.open("http://github.com/ZAA18", "_blank");});
-
-document.getElementById("linkedinBtn").addEventListener ("click", ()=>
-{window.open("http://linkedin.com", "_blank");});
-
-document.getElementById("itchBtn").addEventListener("click", () => 
-{window.open("https://Zubuhle-nel.itch.io");}); */
+*/
 
 let homePath;
 let aboutPath;
@@ -60,3 +52,13 @@ document.getElementById("contactBtn").addEventListener("click", () =>
 {
     window.location.href = contactPath;
 });
+
+document.getElementById("githubBtn").addEventListener("click", ()=> 
+     {window.open("http://github.com/ZAA18", "_blank");});
+     
+     document.getElementById("linkedinBtn").addEventListener ("click", ()=>
+     {window.open("http://linkedin.com", "_blank");});
+     
+     document.getElementById("itchBtn").addEventListener("click", () => 
+     {window.open("https://Zubuhle-nel.itch.io");}); 
+     
