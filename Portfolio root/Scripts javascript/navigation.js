@@ -60,5 +60,5 @@ document.getElementById("githubBtn").addEventListener("click", ()=>
      {window.open("http://linkedin.com", "_blank");});
      
      document.getElementById("itchBtn").addEventListener("click", () => 
-     {window.open("https://Zubuhle-nel.itch.io");}); 
+     {window.open("https://Zubuhle-nel.itch.io", "_blank");}); 
      
