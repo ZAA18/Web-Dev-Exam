@@ -5,6 +5,10 @@ body{
     color: #151718;
 }
 
+img{
+    max-width: 100%;
+    height: auto;
+}
 
 .about{
 width: 100%;
@@ -44,7 +48,8 @@ object-fit: cover;
 }
 
 .about-text{
-width: 700px;
+/* width: 700px; */
+flex: 1;
 }
 
 .about-text p{
@@ -106,4 +111,43 @@ footer{
 .footer-socials button{
     margin:5px;
     padding:10px 20px;
+}
+
+@media (max-width: 768px)
+{
+    .about-container
+    {
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 30px;
+    }
+
+    .profile-container img
+    {
+        width: 100%;
+        max-width: 350px;
+
+        height: auto;
+    }
+
+    .about-text
+    {
+        width: 100%;
+
+        max-width: 350px;
+
+        text-align: center;
+    }
+
+    .about h1
+    {
+        font-size: 2rem;
+    }
+
+    .about-text p
+    {
+        line-height: 1.6;
+    }
 }
