@@ -1,9 +1,32 @@
-/*document.getElementById("viewProjectsBtn").addEventListener("click", ()=>
- {window.location.href = "projects.html";});
 
-document.getElementById("aboutMeBtn").addEventListener("click", () => 
-{window.location.href = "about.html";});
-*/
+document.addEventListener("DOMContentLoaded", () => {
+
+    let aboutPaths = "Portfolio root/Pages/about.html";
+    let projectsPaths = "Portfolio root/Pages/projects.html";
+
+    document.getElementById("viewProjectsBtn").addEventListener("click", () => {
+        window.location.href = projectsPaths;
+    });
+
+    document.getElementById("aboutMeBtn").addEventListener("click", () => {
+        window.location.href = aboutPaths;
+    });
+
+    const projectButtons = document.querySelectorAll(".projectBtn");
+
+    projectButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+            window.location.href = projectsPaths;
+        });
+    });
+
+});
+
+
+
+
+
+// Reveal effects
 
 const elements = document.querySelectorAll(
     ".hero, .hero-image, .featured-projects, .project-card"
