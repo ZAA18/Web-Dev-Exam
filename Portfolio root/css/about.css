@@ -35,7 +35,7 @@ margin: 0 auto;
 
 }
 
-.profile-container{
+/*.profile-container{
 flex-shrink: 0;
 }
 
@@ -45,6 +45,46 @@ height: 450px;
 
 object-fit: cover;
 
+}
+*/
+
+.profile-container
+{
+    flex-shrink: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-container img
+{
+    width: 400px;
+    height: 400px;
+
+    object-fit: cover;
+    object-position: center;
+
+    border-radius: 50%;
+
+    border: 5px solid var(--profile-glow);
+
+    box-shadow:
+        0 0 20px var(--profile-glow),
+        0 0 40px var(--profile-glow),
+        0 0 60px var(--profile-glow);
+
+    transition: all 0.4s ease;
+}
+
+.profile-container img:hover
+{
+    transform: scale(1.03);
+
+    box-shadow:
+        0 0 30px var(--profile-glow),
+        0 0 60px var(--profile-glow),
+        0 0 90px var(--profile-glow);
 }
 
 .about-text{

@@ -11,6 +11,8 @@
     --button-background: #2B2E30;
 
     --button-text: #FBFFFF;
+
+    --profile-glow: #974900;
 }
 
 .dark-mode
@@ -24,6 +26,8 @@
     --button-background: #2B2E30;
 
     --button-text: #FBFFFF;
+
+    --profile-glow: #F39530;
 }
 
 body
