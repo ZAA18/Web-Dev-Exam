@@ -165,3 +165,34 @@ gap: 40px;
         gap: 15px;
     }
 }
+
+/* Theme toggle */
+#themeToggleBtn
+{
+    background-color: #2B2E30;
+    color: #FBFFFF;
+
+    border: 2px solid #FBFFFF;
+    border-radius: 8px;
+
+    padding: 8px 16px;
+
+    cursor: pointer;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+
+    transition: all 0.3s ease;
+}
+
+#themeToggleBtn:hover
+{
+    transform: scale(1.05);
+    background-color: #FBFFFF;
+    color: #2B2E30;
+}
+
+#themeToggleBtn:active
+{
+    transform: scale(0.95);
+}
