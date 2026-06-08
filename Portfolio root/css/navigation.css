@@ -67,7 +67,7 @@ button
 display: flex;
 justify-content: space-between;
 align-items: center;
-padding: 5px 60px;
+padding: 20px 60px;
 /* background-color: azure; */
 background-color: var(--button-background);
 color: var(--button-text);
