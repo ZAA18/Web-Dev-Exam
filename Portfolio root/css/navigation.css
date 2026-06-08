@@ -28,11 +28,13 @@ gap: 40px;
 .nav-links li{
     cursor: pointer;
     font-size: 18px;
+    user-select: none;
 }
 
 .nav-links li{
     display: flex;
     gap: 15px;
+    user-select: none;
 }
     
 .nav-links li {
@@ -40,6 +42,7 @@ gap: 40px;
         cursor: pointer;
         font-size: 18px;
         transition: color 0.3s ease;
+        user-select: none;
  }
     
 .nav-links li::after {
@@ -51,6 +54,7 @@ gap: 40px;
         height: 2px;
         background-color: rgb(138, 15, 15);
         transition: width 0.3s ease;
+        user-select: none;
  }
     
 .nav-links li:hover::after {
