@@ -1,33 +1,25 @@
-// We are on index.html
-let aboutPath = "Portfolio root/Pages/about.html";
-let  projectsPath = "Portfolio root/Pages/projects.html";
 
-// Hero Buttons
+document.addEventListener("DOMContentLoaded", () => {
 
-document.getElementById("viewProjectsBtn")
-    .addEventListener("click", () =>
-{
-    window.location.href = projectsPath;
-});
+    let aboutPaths = "Portfolio root/Pages/about.html";
+    let projectsPaths = "Portfolio root/Pages/projects.html";
 
-
-document.getElementById("aboutMeBtn")
-    .addEventListener("click", () =>
-{
-    window.location.href = aboutPath;
-});
-
-//Project buttons
-
-const projectButtons =
-    document.querySelectorAll(".projectBtn");
-
-projectButtons.forEach((button) =>
-{
-    button.addEventListener("click", () =>
-    {
-        window.location.href = projectsPath;
+    document.getElementById("viewProjectsBtn").addEventListener("click", () => {
+        window.location.href = projectsPaths;
     });
+
+    document.getElementById("aboutMeBtn").addEventListener("click", () => {
+        window.location.href = aboutPaths;
+    });
+
+    const projectButtons = document.querySelectorAll(".projectBtn");
+
+    projectButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+            window.location.href = projectsPaths;
+        });
+    });
+
 });
 
 
