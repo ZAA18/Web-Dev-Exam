@@ -121,3 +121,52 @@ footer{
     margin:5px;
     padding:10px 20px;
 }
+
+@media (max-width: 768px)
+{
+    .projects-container
+    {
+        width: 95%;
+        margin: 30px auto;
+    }
+
+    .projects-container h1
+    {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .projects-grid
+    {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .project-image
+    {
+        height: auto;
+        max-height: 250px;
+    }
+
+    .project-card h2
+    {
+        font-size: 1.5rem;
+    }
+
+    .project-card p
+    {
+        text-align: center;
+    }
+
+    .button-group
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-btn
+    {
+        width: 100%;
+        max-width: 250px;
+    }
+}

@@ -84,3 +84,26 @@ gap: 40px;
 .social-links img:hover {
     transform: translateY(-3px);
 }
+
+@media (max-width: 768px)
+{
+    .navbar
+    {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .nav-links
+    {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .social-links
+    {
+        display: flex;
+        gap: 15px;
+    }
+}
