@@ -147,7 +147,7 @@ gap: 40px;
     transform: translateY(-3px);
 }
 
-@media (max-width: 768px)
+/*@media (max-width: 768px)
 {
     .navbar
     {
@@ -199,4 +199,144 @@ gap: 40px;
 #themeToggleBtn:active
 {
     transform: scale(0.95);
+}
+
+#menuBtn
+{
+    display: none;
+}
+
+/*@media (max-width: 768px)
+{
+    #menuBtn
+    {
+        display: block;
+
+        background: none;
+        border: none;
+
+        font-size: 28px;
+
+        cursor: pointer;
+    }
+
+    .nav-links
+    {
+        display: none;
+    }
+
+    .nav-links.show
+    {
+        display: flex;
+
+        flex-direction: column;
+
+        position: absolute;
+
+        top: 80px;
+        right: 20px;
+
+        background: white;
+
+        padding: 20px;
+
+        border-radius: 10px;
+
+        gap: 15px;
+    }
+
+   // Hide the separators on mobile 
+
+    .nav-links li:not([id])
+    {
+        display: none;
+    }
+}*/
+
+@media (max-width: 768px)
+{
+    .navbar
+    {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 15px 20px;
+    }
+
+    .logo
+    {
+        height: 50px;
+    }
+
+    #menuBtn
+    {
+        display: block;
+
+        background: none;
+        border: none;
+
+        color: var(--button-text);
+
+        font-size: 28px;
+
+        cursor: pointer;
+    }
+
+    .nav-links
+    {
+        display: none;
+    }
+
+    .nav-links.show
+    {
+        display: flex;
+
+        flex-direction: column;
+
+        position: absolute;
+
+        top: 80px;
+        right: 20px;
+
+        background-color: var(--button-background);
+
+        color: var(--button-text);
+
+        padding: 20px;
+
+        border-radius: 10px;
+
+        gap: 15px;
+
+        z-index: 1000;
+    }
+
+    /* Hide the | separators */
+
+    .nav-links li:not([id])
+    {
+        display: none;
+    }
+
+    .social-links
+    {
+        display: flex;
+
+        align-items: center;
+
+        gap: 10px;
+    }
+
+    .social-links img
+    {
+        width: 25px;
+    }
+
+    #themeToggleBtn
+    {
+        font-size: 12px;
+
+        padding: 5px 10px;
+    }
 }

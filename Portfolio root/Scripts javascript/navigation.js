@@ -1,5 +1,4 @@
 
-
 let homePath;
 let aboutPath;
 let projectsPath;
@@ -126,5 +125,16 @@ if (themeBtn)
 
             themeBtn.textContent = "🌙 Dark Mode";
         }
+    });
+}
+
+const menuBtn = document.getElementById("menuBtn");
+const navLinks = document.querySelector(".nav-links");
+
+if(menuBtn)
+{
+    menuBtn.addEventListener("click", () =>
+    {
+        navLinks.classList.toggle("show");
     });
 }
