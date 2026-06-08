@@ -53,7 +53,7 @@ document.getElementById("githubBtn").addEventListener("click", ()=>
 
 
 // Theme
-const themeBtn = document.getElementById("themeToggleBtn");
+/*const themeBtn = document.getElementById("themeToggleBtn");
 
 // Check saved theme when page loads
 if (localStorage.getItem("theme") === "dark")
@@ -85,3 +85,46 @@ if(themeBtn)
         }
     });
 } 
+    */
+
+const themeBtn = document.getElementById("themeToggleBtn");
+
+// Apply saved theme when page loads
+if (localStorage.getItem("theme") === "dark")
+{
+    document.body.classList.add("dark-mode");
+
+    if (themeBtn)
+    {
+        themeBtn.textContent = "☀️ Light Mode";
+    }
+}
+else
+{
+    if (themeBtn)
+    {
+        themeBtn.textContent = "🌙 Dark Mode";
+    }
+}
+
+// Toggle theme when button is clicked
+if (themeBtn)
+{
+    themeBtn.addEventListener("click", () =>
+    {
+        document.body.classList.toggle("dark-mode");
+
+        if (document.body.classList.contains("dark-mode"))
+        {
+            localStorage.setItem("theme", "dark");
+
+            themeBtn.textContent = "☀️ Light Mode";
+        }
+        else
+        {
+            localStorage.setItem("theme", "light");
+
+            themeBtn.textContent = "🌙 Dark Mode";
+        }
+    });
+}
