@@ -2,8 +2,8 @@
 body{
     font-family: "Roboto", sans-serif;
     font-size: large;
-    background-color: #f39530 ;
-    color: #151718;
+    font-optical-sizing: auto;
+   
 }
 
 .hero{
@@ -27,12 +27,14 @@ body{
 
 .hero-buttons{
     margin-top:20px;
+    
 }
 
 .hero-buttons button{
     padding:12px 24px;
     margin:10px;
     cursor:pointer;
+   
 }
 
 .hero-image{
