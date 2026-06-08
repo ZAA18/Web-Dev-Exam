@@ -50,4 +50,38 @@ document.getElementById("githubBtn").addEventListener("click", ()=>
      
      document.getElementById("itchBtn").addEventListener("click", () => 
      {window.open("https://Zubuhle-nel.itch.io", "_blank");}); 
-     
+
+
+// Theme
+const themeBtn = document.getElementById("themeToggleBtn");
+
+// Check saved theme when page loads
+if (localStorage.getItem("theme") === "dark")
+{
+    document.body.classList.add("dark-mode");
+
+    if(themeBtn)
+    {
+        themeBtn.textContent = "Light Mode";
+    }
+}
+
+// Toggle theme
+if(themeBtn)
+{
+    themeBtn.addEventListener("click", () =>
+    {
+        document.body.classList.toggle("dark-mode");
+
+        if(document.body.classList.contains("dark-mode"))
+        {
+            localStorage.setItem("theme", "dark");
+            themeBtn.textContent = "Light Mode";
+        }
+        else
+        {
+            localStorage.setItem("theme", "light");
+            themeBtn.textContent = "Dark Mode";
+        }
+    });
+} 

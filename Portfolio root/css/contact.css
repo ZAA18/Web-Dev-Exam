@@ -1,8 +1,8 @@
 body{
     font-family: "Roboto", sans-serif;
     font-size: large;
-    background-color: #f39530 ;
-    color: #151718;
+    font-optical-sizing: auto;
+   
 }
 
 /*.contact-container{
@@ -113,7 +113,6 @@ body{
     height: 40px;
     border: none;
     border-radius: 10px;
-    background: #d9d9d9;
     cursor: pointer;
 }
 
