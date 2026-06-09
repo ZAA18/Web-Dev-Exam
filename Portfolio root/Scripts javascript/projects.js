@@ -109,19 +109,6 @@ document
     });
 });
 
-/*nextBtn.addEventListener("click", () =>
-{
-    currentIndex++;
-
-    if(currentIndex >= currentGallery.length)
-    {
-        currentIndex = 0;
-    }
-
-    modalImage.src =
-    currentGallery[currentIndex];
-});*/
-
 nextBtn.addEventListener("click", () =>
     {
         let newIndex = currentIndex + 1;
@@ -133,26 +120,6 @@ nextBtn.addEventListener("click", () =>
     
         changeImage(newIndex);
     });
-
-/*prevBtn.addEventListener("click", () =>
-{
-    currentIndex--;
-
-    if(currentIndex < 0)
-    {
-        currentIndex =
-        currentGallery.length - 1;
-    }
-
-    modalImage.src =
-    currentGallery[currentIndex];
-    const galleryTitle =
-
-document.getElementById("galleryTitle");
-
-const imageCounter =
-document.getElementById("imageCounter");
-});*/
 
 prevBtn.addEventListener("click", () =>
     {

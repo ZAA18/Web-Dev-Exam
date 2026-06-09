@@ -30,13 +30,6 @@ body{
     
 }
 
-/*.hero-buttons button{
-    padding:12px 24px;
-    margin:10px;
-    cursor:pointer;
-   
-}
-    */
  .hero-buttons button
 {
     padding: 12px 24px;
@@ -63,14 +56,6 @@ body{
     margin-top:20px;
 }
 
-/*.hero-image img{
-    width:90%;
-    max-width:200px; 
-    height: auto; 
-    border-radius:15px;
-   
-}
-    */
 
     .hero-image img
 {
@@ -111,11 +96,6 @@ body{
     width:300px;
 }
 
-/*.project-card img{
-    width:100%;
-    border-radius:10px;
-}
-    */
 
     .project-card img
     {
@@ -136,31 +116,29 @@ body{
             0 10px 25px rgba(0,0,0,0.25);
     }
 
-.project-card h3{
+.project-card h3
+{
     margin-top:15px;
 }
 
-.project-card p{
+.project-card p
+{
     margin-top:10px;
     line-height:1.5;
 }
 
-/*.projectBtn{
-    margin-top:15px;
-    padding:10px 20px;
+
+.projectBtn
+{
+     margin-top: 15px;
+     padding: 10px 20px;
+    
+    cursor: pointer;
+    
+    transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
 }
-    */
-    .projectBtn
-    {
-        margin-top: 15px;
-        padding: 10px 20px;
-    
-        cursor: pointer;
-    
-        transition:
-            transform 0.3s ease,
-            opacity 0.3s ease;
-    }
     
     .projectBtn:hover
     {
@@ -186,11 +164,7 @@ footer{
     margin:20px 0;
 }
 
-/*.footer-socials button{
-    margin:5px;
-    padding:10px 20px;
-}
-    */
+
     .footer-socials button
 {
     margin: 5px;
