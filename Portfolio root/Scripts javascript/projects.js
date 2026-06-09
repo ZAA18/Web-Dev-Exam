@@ -27,9 +27,16 @@ document.getElementById("footerGithubBtn").addEventListener("click", ()=>
     document.getElementById("footerItchBtn").addEventListener("click", () => 
     {window.open("https://Zubuhle-nel.itch.io", "_blank");}); 
 
+//game names
+    const galleryTitles =
+    {
+        frost: "Frost Roll",
+        marble: "Marble Racer",
+        vault: "Vault Breach"
+    };
 
 //Albums
-  
+
  const galleries =
  {
         frost:
@@ -70,6 +77,9 @@ document.getElementById("nextImage");
 const prevBtn =
 document.getElementById("prevImage");
 
+const galleryTitle = document.getElementById("galleryTitle");
+const imageCounter = document.getElementById("imageCounter");
+
 let currentGallery = [];
 let currentIndex = 0;
 
@@ -85,16 +95,21 @@ document
         currentGallery =
         galleries[galleryName];
 
+        galleryTitle.textContent =
+        galleryTitles[galleryName];
+
         currentIndex = 0;
 
         modalImage.src =
         currentGallery[currentIndex];
 
+        updateCounter();
+
         modal.classList.add("active");
     });
 });
 
-nextBtn.addEventListener("click", () =>
+/*nextBtn.addEventListener("click", () =>
 {
     currentIndex++;
 
@@ -105,9 +120,21 @@ nextBtn.addEventListener("click", () =>
 
     modalImage.src =
     currentGallery[currentIndex];
-});
+});*/
 
-prevBtn.addEventListener("click", () =>
+nextBtn.addEventListener("click", () =>
+    {
+        let newIndex = currentIndex + 1;
+    
+        if(newIndex >= currentGallery.length)
+        {
+            newIndex = 0;
+        }
+    
+        changeImage(newIndex);
+    });
+
+/*prevBtn.addEventListener("click", () =>
 {
     currentIndex--;
 
@@ -119,9 +146,54 @@ prevBtn.addEventListener("click", () =>
 
     modalImage.src =
     currentGallery[currentIndex];
-});
+    const galleryTitle =
+
+document.getElementById("galleryTitle");
+
+const imageCounter =
+document.getElementById("imageCounter");
+});*/
+
+prevBtn.addEventListener("click", () =>
+    {
+        let newIndex = currentIndex - 1;
+    
+        if(newIndex < 0)
+        {
+            newIndex =
+            currentGallery.length - 1;
+        }
+    
+        changeImage(newIndex);
+    });
+
+
 
 closeBtn.addEventListener("click", () =>
 {
     modal.classList.remove("active");
 });
+
+function updateCounter()
+{
+    imageCounter.textContent =
+    `${currentIndex + 1} / ${currentGallery.length}`;
+}
+
+function changeImage(newIndex)
+{
+    modalImage.style.opacity = 0;
+
+    setTimeout(() =>
+    {
+        currentIndex = newIndex;
+
+        modalImage.src =
+        currentGallery[currentIndex];
+
+        modalImage.style.opacity = 1;
+
+        updateCounter();
+
+    }, 200);
+}
