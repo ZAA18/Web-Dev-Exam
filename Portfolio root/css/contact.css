@@ -1,20 +1,16 @@
-body{
+body
+{
     font-family: "Roboto", sans-serif;
     font-size: large;
     font-optical-sizing: auto;
-   
 }
 
-/*.contact-container{
-    width: 900px;
+.contact-container
+{
+    width: 90%;
+    max-width: 900px;
     margin: 40px auto;
 }
-    */
-    .contact-container{
-        width: 90%;
-        max-width: 900px;
-        margin: 40px auto;
-    }
 
 .contact-container h1
 {
@@ -105,7 +101,7 @@ body{
     margin-top: 25px;
 }
 
-    #submitBtn
+#submitBtn
 {
     display: block;
     margin: 25px auto 0;
@@ -124,7 +120,8 @@ body{
 
 /* Footer */
 
-footer{
+footer
+{
     text-align:center;
 
     margin-top:80px;
@@ -134,11 +131,13 @@ footer{
     border-top:1px solid #ccc;
 }
 
-.footer-socials{
+.footer-socials
+{
     margin:20px 0;
 }
 
-.footer-socials button{
+.footer-socials button
+{
     margin:5px;
     padding:10px 20px;
 }

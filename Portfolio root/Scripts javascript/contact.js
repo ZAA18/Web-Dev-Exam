@@ -134,7 +134,13 @@ form.addEventListener("submit", function(event)
 event.preventDefault();
 const isValid = validateFirstName() && validateLastName() && validateEmail() && validateSubject() && validateMessage();
 if (isValid)
+{
     {alert("form submitted successfully!");} 
+}
+else
+{
+    {alert("Please correct your errors!");} 
+}
 });
 
 // footer

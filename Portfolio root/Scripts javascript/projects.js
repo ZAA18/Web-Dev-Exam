@@ -1,34 +1,34 @@
 
 //buttons redirect
 
-    document.getElementById("FrostRollItchBtn").addEventListener ("click", ()=>
+document.getElementById("FrostRollItchBtn").addEventListener ("click", ()=>
     {window.open("https://zubuhle-nel.itch.io/frost-roll", "_blank");});
     
-    document.getElementById("MarbleRacerGithubBtn").addEventListener("click", () => 
+document.getElementById("MarbleRacerGithubBtn").addEventListener("click", () => 
     {window.open("https://github.com/ZAA18/Marble_Racer", "_blank");}); 
 
-    document.getElementById("MarbleRacerItchBtn").addEventListener("click", ()=> 
-        {window.open("https://zubuhle-nel.itch.io/marble-racer", "_blank");});
+document.getElementById("MarbleRacerItchBtn").addEventListener("click", ()=> 
+    {window.open("https://zubuhle-nel.itch.io/marble-racer", "_blank");});
         
-        document.getElementById("VaultBreachGithubBtn").addEventListener ("click", ()=>
-        {window.open("https://github.com/ZAA18/Vault_Breach", "_blank");});
+document.getElementById("VaultBreachGithubBtn").addEventListener ("click", ()=>
+    {window.open("https://github.com/ZAA18/Vault_Breach", "_blank");});
         
-        document.getElementById("VaultBreachItchBtn").addEventListener("click", () => 
-        {window.open("https://zubuhle-nel.itch.io/vault-breach", "_blank");}); 
+document.getElementById("VaultBreachItchBtn").addEventListener("click", () => 
+    {window.open("https://zubuhle-nel.itch.io/vault-breach", "_blank");}); 
 
 
 // footer
 document.getElementById("footerGithubBtn").addEventListener("click", ()=> 
     {window.open("http://github.com/ZAA18", "_blank");});
     
-    document.getElementById("footerLinkedinBtn").addEventListener ("click", ()=>
+document.getElementById("footerLinkedinBtn").addEventListener ("click", ()=>
     {window.open("http://linkedin.com", "_blank");});
     
-    document.getElementById("footerItchBtn").addEventListener("click", () => 
+document.getElementById("footerItchBtn").addEventListener("click", () => 
     {window.open("https://Zubuhle-nel.itch.io", "_blank");}); 
 
 //game names
-    const galleryTitles =
+const galleryTitles =
     {
         frost: "Frost Roll",
         marble: "Marble Racer",

@@ -1,4 +1,3 @@
-
 let homePath;
 let aboutPath;
 let projectsPath;
