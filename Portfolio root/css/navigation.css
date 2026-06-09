@@ -290,6 +290,57 @@ gap: 40px;
     }
 }
 
+/* Phones in Landscape */
+@media (max-width: 768px) and (orientation: landscape)
+{
+    .navbar
+    {
+        padding: 10px 15px;
+    }
+
+    .logo
+    {
+        height: 45px;
+    }
+
+    #menuBtn
+    {
+        font-size: 24px;
+    }
+
+    .nav-links.show
+    {
+        top: 65px;
+        right: 15px;
+
+        padding: 15px;
+
+        gap: 10px;
+    }
+
+    .social-links
+    {
+        gap: 8px;
+    }
+
+    .social-links img
+    {
+        width: 28px;
+        height: 28px;
+    }
+
+    #themeToggleBtn
+    {
+        font-size: 9px;
+        height: 28px;
+        padding: 0 8px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 /* Small Tablets */
 @media (min-width: 769px) and (max-width: 992px)
 {
