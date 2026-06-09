@@ -1,4 +1,3 @@
-
 // footer
 document.getElementById("footerGithubBtn").addEventListener("click", ()=> 
     {window.open("http://github.com/ZAA18", "_blank");});

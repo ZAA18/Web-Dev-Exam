@@ -21,7 +21,7 @@
 
     --heading-color: #151718;
 
-    --text-color: #2B2E30;
+    --text-color: #FBFFFF;
 
     --button-background: #2B2E30;
 
@@ -63,7 +63,8 @@ button
 }
 
 
-.navbar{
+.navbar
+{
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -77,37 +78,43 @@ font-weight: 400;
 font-style: normal;
 }
 
-.logo {
-    height: 60px;
+.logo 
+{
+    height: 80px;
 }
 
-.nav-links{
+.nav-links
+{
 display: flex;
 list-style: none;
 gap: 40px;
 }
 
-.nav-links li{
+.nav-links li
+{
     cursor: pointer;
     font-size: 18px;
     user-select: none;
 }
 
-.nav-links li{
+.nav-links li
+{
     display: flex;
     gap: 15px;
     user-select: none;
 }
     
-.nav-links li {
+.nav-links li 
+{
         position: relative;
         cursor: pointer;
         font-size: 18px;
         transition: color 0.3s ease;
         user-select: none;
- }
+}
     
-.nav-links li::after {
+.nav-links li::after 
+{
         content: "";
         position: absolute;
         left: 0;
@@ -119,38 +126,79 @@ gap: 40px;
         user-select: none;
  }
     
-.nav-links li:hover::after {
-        width: 100%;
-}
-
-.nav-links li.active {
-    font-weight: bold;
-}
-
-.nav-links li.active::after {
+.nav-links li:hover::after 
+{
     width: 100%;
 }
 
-
-.social-links img{
-    width: 30px;
-    cursor: pointer;
+.nav-links li.active 
+{
+    font-weight: bold;
 }
 
-.social-links img {
-    width: 30px;
+.nav-links li.active::after 
+{
+    width: 100%;
+}
+
+.social-links img:hover 
+{
+    transform: translateY(-3px);
+}
+
+/*.social-links img
+{
+    width: 50px;
+    cursor: pointer;
+} 
+
+.social-links img 
+{
+    width: 50px;
     cursor: pointer;
     transition: transform 0.3s ease;
 }
-
-.social-links img:hover {
-    transform: translateY(-3px);
+    */
+.social-links
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
+
+.social-links img
+{
+    width: 50px;
+    height: 40px;
+    object-fit: contain;
+}
+
+#themeToggleBtn
+{
+    height: 40px; /* Same height as icons */
+
+    background-color: #2B2E30;
+    color: #FBFFFF;
+
+    border: 2px solid #FBFFFF;
+    border-radius: 8px;
+
+    /* padding: 0 16px; Remove vertical padding */
+
+    cursor: pointer;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+
+    transition: all 0.3s ease;
+}
+
+
 
 
 
 /* Theme toggle */
-#themeToggleBtn
+/*#themeToggleBtn
 {
     background-color: #2B2E30;
     color: #FBFFFF;
@@ -167,6 +215,7 @@ gap: 40px;
 
     transition: all 0.3s ease;
 }
+*/
 
 #themeToggleBtn:hover
 {
@@ -258,18 +307,43 @@ gap: 40px;
 
         align-items: center;
 
-        gap: 10px;
+        gap: 5px;
     }
 
-    .social-links img
+    /* .social-links img
     {
-        width: 15px;
+        width: 25px;
     }
 
     #themeToggleBtn
     {
         font-size: 8px;
+        width: 25;
+        padding: 2px 5px;
+    } */
 
-        padding: 3px 7px;
-    }
+    .social-links
+{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.social-links img
+{
+    width: 25px;
+    height: 25px;
+}
+
+#themeToggleBtn
+{
+    height: 25px;
+    font-size: 7px;
+    width: 25;
+    /* padding: 0 6px; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 }
