@@ -147,28 +147,7 @@ gap: 40px;
     transform: translateY(-3px);
 }
 
-/*@media (max-width: 768px)
-{
-    .navbar
-    {
-        flex-direction: column;
-        gap: 15px;
-        padding: 20px;
-    }
 
-    .nav-links
-    {
-        gap: 20px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .social-links
-    {
-        display: flex;
-        gap: 15px;
-    }
-}
 
 /* Theme toggle */
 #themeToggleBtn
@@ -206,52 +185,6 @@ gap: 40px;
     display: none;
 }
 
-/*@media (max-width: 768px)
-{
-    #menuBtn
-    {
-        display: block;
-
-        background: none;
-        border: none;
-
-        font-size: 28px;
-
-        cursor: pointer;
-    }
-
-    .nav-links
-    {
-        display: none;
-    }
-
-    .nav-links.show
-    {
-        display: flex;
-
-        flex-direction: column;
-
-        position: absolute;
-
-        top: 80px;
-        right: 20px;
-
-        background: white;
-
-        padding: 20px;
-
-        border-radius: 10px;
-
-        gap: 15px;
-    }
-
-   // Hide the separators on mobile 
-
-    .nav-links li:not([id])
-    {
-        display: none;
-    }
-}*/
 
 @media (max-width: 768px)
 {
