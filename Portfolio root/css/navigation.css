@@ -80,7 +80,7 @@ font-style: normal;
 
 .logo 
 {
-    height: 80px;
+    height: 60px;
 }
 
 .nav-links
@@ -111,7 +111,7 @@ gap: 40px;
         font-size: 18px;
         transition: color 0.3s ease;
         user-select: none;
-}
+ }
     
 .nav-links li::after 
 {
@@ -128,7 +128,7 @@ gap: 40px;
     
 .nav-links li:hover::after 
 {
-    width: 100%;
+        width: 100%;
 }
 
 .nav-links li.active 
@@ -141,64 +141,29 @@ gap: 40px;
     width: 100%;
 }
 
+
+.social-links img
+{
+    width: 30px;
+    cursor: pointer;
+}
+
+.social-links img 
+{
+    width: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
 .social-links img:hover 
 {
     transform: translateY(-3px);
 }
 
-/*.social-links img
-{
-    width: 50px;
-    cursor: pointer;
-} 
-
-.social-links img 
-{
-    width: 50px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-    */
-.social-links
-{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.social-links img
-{
-    width: 50px;
-    height: 40px;
-    object-fit: contain;
-}
-
-#themeToggleBtn
-{
-    height: 40px; /* Same height as icons */
-
-    background-color: #2B2E30;
-    color: #FBFFFF;
-
-    border: 2px solid #FBFFFF;
-    border-radius: 8px;
-
-    /* padding: 0 16px; Remove vertical padding */
-
-    cursor: pointer;
-
-    font-family: "Roboto", sans-serif;
-    font-weight: bold;
-
-    transition: all 0.3s ease;
-}
-
-
-
 
 
 /* Theme toggle */
-/*#themeToggleBtn
+#themeToggleBtn
 {
     background-color: #2B2E30;
     color: #FBFFFF;
@@ -215,7 +180,6 @@ gap: 40px;
 
     transition: all 0.3s ease;
 }
-*/
 
 #themeToggleBtn:hover
 {
@@ -243,7 +207,7 @@ gap: 40px;
         justify-content: space-between;
         align-items: center;
 
-        padding: 15px 20px;
+        padding: 15px 5px;
     }
 
     .logo
@@ -307,43 +271,21 @@ gap: 40px;
 
         align-items: center;
 
-        gap: 5px;
+        gap: 10px;
     }
 
-    /* .social-links img
+    .social-links img
     {
-        width: 25px;
+         width: 30px;
+         height: 30px;
     }
 
     #themeToggleBtn
     {
-        font-size: 8px;
-        width: 25;
-        padding: 2px 5px;
-    } */
-
-    .social-links
-{
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-.social-links img
-{
-    width: 25px;
-    height: 25px;
-}
-
-#themeToggleBtn
-{
-    height: 25px;
-    font-size: 7px;
-    width: 25;
-    /* padding: 0 6px; */
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+        font-size: 7px;
+        height: 25;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
