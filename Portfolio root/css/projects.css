@@ -304,3 +304,101 @@ footer{
 
     transition: opacity 0.3s ease;
 }
+
+model-viewer
+{
+    width: 500px;
+    height: 600px;
+
+    margin: auto;
+
+    display: block;
+}
+
+
+/* PROJECT TAGS  VaultBreach*/
+
+.project-tags
+{
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-bottom: 15px;
+}
+
+.project-tags span
+{
+    background-color: #2B2E30;
+
+    color: white;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+}
+
+/* DROPDOWNS */
+
+.project-details
+{
+    margin-top: 15px;
+}
+
+.project-details details
+{
+    margin-bottom: 10px;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    background: rgba(0,0,0,0.08);
+}
+
+.project-details summary
+{
+    padding: 12px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+.project-details p
+{
+    padding: 12px;
+
+    margin: 0;
+}
+
+.project-model
+{
+    width: 100%;
+
+    height: 450px;
+
+    border-radius: 10px;
+
+    background-color: rgba(255,255,255,0.05);
+}
+
+/* for the project list */
+
+.project-list
+{
+    padding-left: 30px;
+
+    margin-bottom: 15px;
+}
+
+.project-list li
+{
+    margin-bottom: 8px;
+}
