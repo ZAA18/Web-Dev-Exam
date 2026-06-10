@@ -207,6 +207,14 @@ button
     display: none;
 }
 
+.separator
+{
+    cursor: default !important;
+    pointer-events: none;
+}
+
+
+
 /*  MOBILE  */
 
 @media (max-width: 768px)
@@ -271,12 +279,12 @@ button
     transition: right 0.3s ease;
 
     box-shadow: -5px 0 15px rgba(0,0,0,0.3);
-}
+   }
 
-.nav-links.show
-{
+  .nav-links.show
+  {
     right: 0;
-}
+  }
 
 .menu-title
 { 
