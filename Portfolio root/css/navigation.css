@@ -19,6 +19,7 @@
 }
 
 /* BASE */
+
 body
 {
     background-color: var(--background-color);
@@ -26,7 +27,9 @@ body
     transition: 0.3s ease;
 }
 
-h1, h2, h3
+h1,
+h2,
+h3
 {
     color: var(--heading-color);
 }
@@ -39,6 +42,7 @@ button
 }
 
 /* RESET */
+
 *
 {
     margin: 0;
@@ -50,13 +54,15 @@ button
 
 .navbar
 {
+    position: relative;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    /* fluid padding */
-    padding: clamp(10px, 2vw, 20px)
-             clamp(12px, 5vw, 60px);
+    padding:
+        clamp(10px, 2vw, 20px)
+        clamp(12px, 5vw, 60px);
 
     background-color: var(--button-background);
     color: var(--button-text);
@@ -64,16 +70,17 @@ button
     width: 100%;
 
     font-family: "IBM Plex Mono", monospace;
-    
 }
 
 /* LOGO */
+
 .logo
 {
     height: clamp(40px, 6vw, 60px);
 }
 
 /* NAV LINKS */
+
 .nav-links
 {
     display: flex;
@@ -84,20 +91,24 @@ button
 
 .nav-links li
 {
+    position: relative;
+
     cursor: pointer;
     user-select: none;
 
     font-size: clamp(14px, 1.4vw, 18px);
 
-    position: relative;
     transition: color 0.3s ease;
 }
 
-/* underline animation */
+/* Underline Animation */
+
 .nav-links li::after
 {
     content: "";
+
     position: absolute;
+
     left: 0;
     bottom: -5px;
 
@@ -105,6 +116,7 @@ button
     height: 2px;
 
     background-color: #F39530;
+
     transition: width 0.3s ease;
 }
 
@@ -114,13 +126,24 @@ button
     width: 100%;
 }
 
-/* SOCIAL ICONS */
+/* SOCIAL LINKS */
+
+.social-links
+{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
 .social-links img
 {
     width: clamp(24px, 3vw, 30px);
     height: clamp(24px, 3vw, 30px);
 
+    display: block;
+
     cursor: pointer;
+
     transition: transform 0.3s ease;
 }
 
@@ -130,32 +153,39 @@ button
 }
 
 /* THEME BUTTON */
+
 #themeToggleBtn
 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     background-color: #2B2E30;
     color: #FBFFFF;
 
     border: 2px solid #FBFFFF;
     border-radius: 8px;
-    
 
-    padding: clamp(4px, 1vw, 8px)
-             clamp(8px, 2vw, 16px);
+    padding:
+        clamp(4px, 1vw, 8px)
+        clamp(8px, 2vw, 16px);
 
     font-size: clamp(10px, 1vw, 14px);
+
+    line-height: 1;
 
     cursor: pointer;
 
     font-family: "Roboto", sans-serif;
     font-weight: bold;
 
-    
     transition: all 0.3s ease;
 }
 
 #themeToggleBtn:hover
 {
     transform: scale(1.05);
+
     background-color: #FBFFFF;
     color: #2B2E30;
 }
@@ -166,15 +196,26 @@ button
 }
 
 /* MENU BUTTON */
+
 #menuBtn
 {
     display: none;
 }
 
-/* ================= MOBILE ONLY (HAMBURGER) ================= */
+/* ================= MOBILE ================= */
 
 @media (max-width: 768px)
 {
+    .navbar
+    {
+        padding: 15px 10px;
+    }
+
+    .logo
+    {
+        height: 50px;
+    }
+
     #menuBtn
     {
         display: block;
@@ -183,6 +224,7 @@ button
         border: none;
 
         color: var(--button-text);
+
         font-size: 28px;
 
         cursor: pointer;
@@ -196,21 +238,49 @@ button
     .nav-links.show
     {
         display: flex;
+
         flex-direction: column;
 
         position: absolute;
-        top: 100%;
-        right: 10px;
+
+        top: 80px;
+        right: 20px;
 
         width: min(250px, 90vw);
 
         background-color: var(--button-background);
+        color: var(--button-text);
 
-        padding: 15px;
+        padding: 20px;
+
         border-radius: 10px;
 
         gap: 15px;
 
         z-index: 1000;
+    }
+
+    /* Hide separators */
+
+    .nav-links li:not([id])
+    {
+        display: none;
+    }
+
+    .social-links
+    {
+        gap: 5px;
+    }
+
+    .social-links img
+    {
+        width: 30px;
+        height: 30px;
+    }
+
+    #themeToggleBtn
+    {
+        font-size: 9px;
+        min-height: 30px;
     }
 }
