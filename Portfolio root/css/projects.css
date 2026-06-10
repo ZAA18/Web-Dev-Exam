@@ -93,6 +93,8 @@ body
     flex-wrap: wrap;
 }
 
+/* PROJECT BUTTONS */
+
 .project-btn
 {
     border: none;
@@ -101,12 +103,29 @@ body
     padding: 10px 20px;
 
     cursor: pointer;
+
+    transition:
+        transform 0.3s ease,
+        background-color 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
 .project-btn:hover
 {
-    transform: scale(1.05);
+    transform: translateY(-3px);
+
+    background-color: #3a3d40;
+
+    box-shadow:
+        0 0 10px rgba(255,255,255,0.15),
+        0 0 20px rgba(255,255,255,0.1);
 }
+
+.project-btn:active
+{
+    transform: translateY(1px);
+}
+
 
 /* FOOTER */
 
@@ -128,6 +147,81 @@ footer
     margin:5px;
     padding:10px 20px;
 }
+
+.footer-socials
+{
+    margin: 20px 0;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+.footer-socials button
+{
+    margin: 5px;
+    padding: 10px 20px;
+
+    cursor: pointer;
+
+    border-radius: 8px;
+
+    transition:
+        transform 0.3s ease,
+        background-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.footer-socials
+{
+    margin: 20px 0;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+.footer-socials button
+{
+    margin: 5px;
+    padding: 10px 20px;
+
+    border: none;
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.3s ease,
+        background-color 0.3s ease,
+        color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.footer-socials button:hover
+{
+    transform: translateY(-3px);
+
+    background-color: #45494c;
+
+    box-shadow:
+        0 0 10px rgba(255,255,255,0.15),
+        0 4px 12px rgba(255,255,255,0.15);
+}
+
+.footer-socials button:active
+{
+    transform: translateY(1px);
+
+    background-color: #1d1f20;
+
+    box-shadow: none;
+}
+
 
 /* MEDIA QUERY  */
 
