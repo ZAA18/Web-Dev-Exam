@@ -11,7 +11,7 @@ body
     font-family: Arial, sans-serif;
 }
 
-/* ================= CONTAINER ================= */
+/* CONTAINER */
 
 .projects-container
 {
@@ -26,7 +26,7 @@ body
     font-size: clamp(2rem, 3vw, 40px);
 }
 
-/* ================= GRID (ONLY CHANGE HERE FOR RESPONSIVENESS) ================= */
+/* GRID */
 
 .projects-grid
 {
@@ -38,7 +38,7 @@ body
     gap: clamp(20px, 3vw, 40px);
 }
 
-/* ================= PROJECT CARD ================= */
+/* PROJECT CARD */
 
 .project-card
 {
@@ -80,19 +80,7 @@ body
     text-align: left;
 }
 
-/* ================= BUTTONS ================= */
-
-/*.button-group
-{
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-
-    margin-top: auto;
-
-    flex-wrap: wrap;
-}
-    */
+/*  BUTTONS */
 
     .button-group
 {
@@ -120,7 +108,7 @@ body
     transform: scale(1.05);
 }
 
-/* ================= FOOTER ================= */
+/* FOOTER */
 
 footer
 {
@@ -141,7 +129,7 @@ footer
     padding:10px 20px;
 }
 
-/* ================= YOUR MEDIA QUERY (PRESERVED, JUST CLEANED) ================= */
+/* MEDIA QUERY  */
 
 @media (max-width: 768px)
 {
@@ -175,7 +163,7 @@ footer
     }
 }
 
-/* ================= IMAGE HOVER (UNCHANGED) ================= */
+/* IMAGE HOVER */
 
 .project-card
 {
@@ -193,7 +181,7 @@ footer
     transform: scale(1.02);
 }
 
-/* ================= MAGNIFY ICON ================= */
+/* MAGNIFY ICON  */
 
 .project-card::after
 {
@@ -214,7 +202,7 @@ footer
     opacity: 1;
 }
 
-/* ================= GALLERY ================= */
+/*  GALLERY */
 
 .gallery-modal
 {
@@ -294,7 +282,7 @@ footer
     font-size: 18px;
 }
 
-/* ================= MODEL ================= */
+/*  MODEL  */
 
 model-viewer
 {
@@ -305,7 +293,7 @@ model-viewer
     display: block;
 }
 
-/* ================= TAGS ================= */
+/*  TAGS  */
 
 .project-tags
 {
@@ -327,7 +315,7 @@ model-viewer
     font-size: clamp(12px, 1vw, 14px);
 }
 
-/* ================= DROPDOWNS ================= */
+/*  DROPDOWNS  */
 
 .project-details
 {
@@ -357,7 +345,7 @@ model-viewer
     margin: 0;
 }
 
-/* ================= LIST ================= */
+/*  LIST */
 
 .project-list
 {
