@@ -303,17 +303,6 @@ footer
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-/*.footer-socials button:hover
-{
-    transform: translateY(-3px);
-}
-    *?
-
-.footer-socials button:active
-{
-    transform: translateY(1px);
-}
-
 
 /*  FOOTER BUTTON EFFECTS */
 
@@ -343,26 +332,10 @@ footer-socials button
 {
     transform: translateY(1px);
 
-    /* slightly darker when pressed */
+    
     background-color: #1d1f20;
 }
 
-/* .footer-socials button
-{
-    transition:
-        transform 0.3s ease,
-        opacity 0.3s ease;
-}
-
-.footer-socials button:hover
-{
-    transform: translateY(-3px);
-}
-
-.footer-socials button:active
-{
-    transform: translateY(1px);
-} */
 
 button
 {
