@@ -49,7 +49,7 @@ body
 /* 🔥 FIX: prevents layout shift + keeps alignment stable */
 .form-group input
 {
-    width: 100%;
+    width: 50%;
 
     max-width: 100%;
 
