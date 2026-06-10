@@ -135,28 +135,6 @@ body
     /* margin-right: 180px; */
 }
 
-
-/*#submitBtn
-{
-        width: 180px;
-        height: 50px;
- 
-        border: none;
-    
-        border-radius: 12px;
-    
-        background: #151718;
-    
-        color: #FBFFFF;
-    
-        font-size: 16px;
-        font-weight: 600;
-    
-        cursor: pointer;
-    
-        transition: all 0.3s ease;
-}   */
-
 #submitBtn
 {
     display: block;
