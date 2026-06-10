@@ -1,47 +1,32 @@
 :root
 {
-    /* Light Mode */
-
     --background-color: #F39530;
-
     --heading-color: #151718;
-
     --text-color: #FBFFFF;
-
     --button-background: #2B2E30;
-
     --button-text: #FBFFFF;
-
     --profile-glow: #974900;
 }
 
 .dark-mode
 {
     --background-color: #974900;
-
     --heading-color: #151718;
-
     --text-color: #FBFFFF;
-
     --button-background: #2B2E30;
-
     --button-text: #FBFFFF;
-
     --profile-glow: #F39530;
 }
 
+/* BASE */
 body
 {
     background-color: var(--background-color);
-
     color: var(--text-color);
-
     transition: 0.3s ease;
 }
 
-h1,
-h2,
-h3
+h1, h2, h3
 {
     color: var(--heading-color);
 }
@@ -49,120 +34,101 @@ h3
 button
 {
     background-color: var(--button-background);
-
     color: var(--button-text);
-
     border: none;
 }
 
-
-*{
+/* RESET */
+*
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* ================= NAVBAR ================= */
 
 .navbar
 {
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 20px 60px;
-/* background-color: azure; */
-background-color: var(--button-background);
-color: var(--button-text);
-width: 100%;
-font-family: "IBM Plex Mono", monospace;
-font-weight: 400;
-font-style: normal;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* fluid padding */
+    padding: clamp(10px, 2vw, 20px)
+             clamp(12px, 5vw, 60px);
+
+    background-color: var(--button-background);
+    color: var(--button-text);
+
+    width: 100%;
+
+    font-family: "IBM Plex Mono", monospace;
 }
 
-.logo 
+/* LOGO */
+.logo
 {
-    height: 60px;
+    height: clamp(40px, 6vw, 60px);
 }
 
+/* NAV LINKS */
 .nav-links
 {
-display: flex;
-list-style: none;
-gap: 40px;
+    display: flex;
+    list-style: none;
+
+    gap: clamp(15px, 3vw, 40px);
 }
 
 .nav-links li
 {
     cursor: pointer;
-    font-size: 18px;
     user-select: none;
+
+    font-size: clamp(14px, 1.4vw, 18px);
+
+    position: relative;
+    transition: color 0.3s ease;
 }
 
-.nav-links li
+/* underline animation */
+.nav-links li::after
 {
-    display: flex;
-    gap: 15px;
-    user-select: none;
-}
-    
-.nav-links li 
-{
-        position: relative;
-        cursor: pointer;
-        font-size: 18px;
-        transition: color 0.3s ease;
-        user-select: none;
- }
-    
-.nav-links li::after 
-{
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: -5px;
-        width: 0%;
-        height: 2px;
-        background-color: #F39530;
-        transition: width 0.3s ease;
-        user-select: none;
- }
-    
-.nav-links li:hover::after 
-{
-        width: 100%;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+
+    width: 0%;
+    height: 2px;
+
+    background-color: #F39530;
+    transition: width 0.3s ease;
 }
 
-.nav-links li.active 
-{
-    font-weight: bold;
-}
-
-.nav-links li.active::after 
+.nav-links li:hover::after,
+.nav-links li.active::after
 {
     width: 100%;
 }
 
-
+/* SOCIAL ICONS */
 .social-links img
 {
-    width: 30px;
-    cursor: pointer;
-}
+    width: clamp(24px, 3vw, 30px);
+    height: clamp(24px, 3vw, 30px);
 
-.social-links img 
-{
-    width: 30px;
     cursor: pointer;
     transition: transform 0.3s ease;
 }
 
-.social-links img:hover 
+.social-links img:hover
 {
     transform: translateY(-3px);
 }
 
-
-
-/* Theme toggle */
+/* THEME BUTTON */
 #themeToggleBtn
 {
     background-color: #2B2E30;
@@ -171,7 +137,10 @@ gap: 40px;
     border: 2px solid #FBFFFF;
     border-radius: 8px;
 
-    padding: 8px 16px;
+    padding: clamp(4px, 1vw, 8px)
+             clamp(8px, 2vw, 16px);
+
+    font-size: clamp(10px, 1vw, 14px);
 
     cursor: pointer;
 
@@ -193,28 +162,16 @@ gap: 40px;
     transform: scale(0.95);
 }
 
+/* MENU BUTTON */
 #menuBtn
 {
     display: none;
 }
 
+/* ================= MOBILE ONLY (HAMBURGER) ================= */
 
 @media (max-width: 768px)
 {
-    .navbar
-    {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-
-        padding: 15px 5px;
-    }
-
-    .logo
-    {
-        height: 50px;
-    }
-
     #menuBtn
     {
         display: block;
@@ -223,7 +180,6 @@ gap: 40px;
         border: none;
 
         color: var(--button-text);
-
         font-size: 28px;
 
         cursor: pointer;
@@ -237,207 +193,21 @@ gap: 40px;
     .nav-links.show
     {
         display: flex;
-
         flex-direction: column;
 
         position: absolute;
+        top: 100%;
+        right: 10px;
 
-        top: 80px;
-        right: 20px;
+        width: min(250px, 90vw);
 
         background-color: var(--button-background);
 
-        color: var(--button-text);
-
-        padding: 20px;
-
+        padding: 15px;
         border-radius: 10px;
 
         gap: 15px;
 
         z-index: 1000;
-    }
-
-    /* Hide the | separators */
-
-    .nav-links li:not([id])
-    {
-        display: none;
-    }
-
-    .social-links
-    {
-        display: flex;
-
-        align-items: center;
-
-        gap: 5px;
-    }
-
-    .social-links img
-    {
-         width: 30px;
-         height: 30px;
-    }
-
-    #themeToggleBtn
-    {
-        font-size: 7px;
-        height: 25;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-}
-
-/* Phones in Landscape */
-@media (max-width: 768px) and (orientation: landscape)
-{
-    .navbar
-    {
-        padding: 10px 15px;
-    }
-
-    .logo
-    {
-        height: 45px;
-    }
-
-    #menuBtn
-    {
-        font-size: 24px;
-    }
-
-    .nav-links.show
-    {
-        top: 65px;
-        right: 15px;
-
-        padding: 15px;
-
-        gap: 10px;
-    }
-
-    .social-links
-    {
-        gap: 8px;
-    }
-
-    .social-links img
-    {
-        width: 28px;
-        height: 28px;
-    }
-
-    #themeToggleBtn
-    {
-        font-size: 9px;
-        height: 28px;
-        padding: 0 8px;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-}
-
-/* Small Tablets */
-@media (min-width: 769px) and (max-width: 992px)
-{
-    .navbar
-    {
-        padding: 15px 20px;
-    }
-
-    .logo
-    {
-        height: 55px;
-    }
-
-    .nav-links
-    {
-        gap: 20px;
-    }
-
-    .nav-links li
-    {
-        font-size: 16px;
-    }
-
-    .social-links
-    {
-        gap: 8px;
-    }
-
-    .social-links img
-    {
-        width: 30px;
-        height: 30px;
-    }
-
-    #themeToggleBtn
-    {
-        font-size: 10px;
-        padding: 6px 10px;
-    }
-
-    #menuBtn
-    {
-        display: none;
-    }
-}
-
-/* Large Tablets */
-@media (min-width: 993px) and (max-width: 1200px)
-{
-    .navbar
-    {
-        padding: 20px 30px;
-    }
-
-    .logo
-    {
-        height: 60px;
-    }
-
-    .nav-links
-    {
-        gap: 25px;
-    }
-
-    .nav-links li
-    {
-        font-size: 17px;
-    }
-
-    .social-links img
-    {
-        width: 30px;
-        height: 30px;
-    }
-
-    #themeToggleBtn
-    {
-        font-size: 11px;
-        padding: 8px 12px;
-    }
-
-    #menuBtn
-    {
-        display: none;
-    }
-}
-
-/* Small Laptops */
-@media (min-width: 1201px) and (max-width: 1440px)
-{
-    .navbar
-    {
-        padding: 20px 40px;
-    }
-
-    .nav-links
-    {
-        gap: 30px;
     }
 }
