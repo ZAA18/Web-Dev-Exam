@@ -50,7 +50,7 @@ button
     box-sizing: border-box;
 }
 
-/* ================= NAVBAR ================= */
+/*  NAVBAR */
 
 .navbar
 {
@@ -207,7 +207,7 @@ button
     display: none;
 }
 
-/* ================= MOBILE ================= */
+/*  MOBILE  */
 
 @media (max-width: 768px)
 {
@@ -241,9 +241,9 @@ button
     }
 
     .nav-links
-{
+   {
     transition: all 0.3s ease;
-}
+   }
 
 .nav-links
 {
@@ -257,7 +257,7 @@ button
     right: -280px;
 
     width: 130px;
-    /* height: 14vh; */
+    
     height: auto;
 
     background-color: var(--button-background);
@@ -283,8 +283,6 @@ button
     display: block;
     text-align: center;
 
-    
-
     font-size: 30px;
 
     font-weight: bold;
@@ -293,24 +291,22 @@ button
 
     padding-bottom: 2px;
 
-    /* border-bottom: 2px solid #F39530; */
-
     margin-bottom: 3px;
 
     cursor: default;
 
 }
 
-.menu-title
-{
+   .menu-title
+    {
     pointer-events: none;
-}
+    }
 
 
     .nav-links li:not([id]):not(.menu-title)
-{
+    {
     display: none;
-}
+    }
 
     .social-links
     {
