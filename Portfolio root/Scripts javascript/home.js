@@ -22,9 +22,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-
-
-
 // Reveal effects
 
 const elements = document.querySelectorAll(
