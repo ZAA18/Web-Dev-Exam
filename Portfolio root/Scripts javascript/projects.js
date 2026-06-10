@@ -50,7 +50,7 @@ const galleryTitles =
         [
             "../Assets/Images/MArble racer.png",
             "../Assets/Images/Marble2.png",
-            "../Assets/Images/Marble3.png"
+            "../Assets/Images/Marble4.png"
         ],
     
         vault:
