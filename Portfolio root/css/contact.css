@@ -20,13 +20,13 @@ body
     font-size: 36px;
 }
 
-/*  GRID (FIXED ORDER - NO SWAPPING) */
+/*  GRID */
 
 .contact-grid
 {
     display: grid;
 
-    /* 🔥 FIX: keeps strict 2-column layout like your original */
+     
     grid-template-columns: repeat(2, 1fr);
 
     gap: 25px 100px;

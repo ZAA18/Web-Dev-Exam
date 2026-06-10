@@ -1,4 +1,4 @@
-/* ================= BASE ================= */
+/* BASE  */
 
 body
 {
@@ -15,7 +15,7 @@ img
     height: auto;
 }
 
-/* ================= ABOUT HEADER ================= */
+/* ABOUT HEADER */
 
 .about
 {
@@ -31,7 +31,7 @@ img
     font-size: clamp(2rem, 4vw, 3rem);
 }
 
-/* ================= MAIN LAYOUT ================= */
+/*  MAIN LAYOUT */
 
 .about-container
 {
@@ -39,7 +39,7 @@ img
     justify-content: center;
     align-items: center;
 
-    flex-wrap: wrap; /* 🔥 allows auto stacking */
+    flex-wrap: wrap; 
 
     gap: clamp(30px, 5vw, 80px);
 
@@ -47,7 +47,7 @@ img
     margin: 0 auto;
 }
 
-/* ================= PROFILE IMAGE ================= */
+/*  PROFILE IMAGE */
 
 .profile-container
 {
@@ -87,7 +87,7 @@ img
         0 0 90px var(--profile-glow);
 }
 
-/* ================= TEXT ================= */
+/*  TEXT */
 
 .about-text
 {
@@ -102,7 +102,7 @@ img
     line-height: 1.8;
 }
 
-/* ================= CAREER GOALS ================= */
+/* CAREER GOALS */
 
 .career-goals
 {
@@ -116,7 +116,7 @@ img
     margin: 0 auto;
 }
 
-/* ================= SKILLS ================= */
+/* SKILLS */
 
 .skills
 {
@@ -131,7 +131,7 @@ img
     margin-top: 20px;
 }
 
-/* ================= FOOTER ================= */
+/* FOOTER  */
 
 footer
 {

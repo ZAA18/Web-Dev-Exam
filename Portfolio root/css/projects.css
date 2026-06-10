@@ -32,7 +32,7 @@ body
 {
     display: grid;
 
-    /* replaces fixed 3 columns */
+    
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 
     gap: clamp(20px, 3vw, 40px);
