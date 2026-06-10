@@ -275,6 +275,8 @@ body
 
 /* FOOTER */
 
+
+
 footer
 {
     text-align: center;
@@ -301,10 +303,11 @@ footer
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.footer-socials button:hover
+/*.footer-socials button:hover
 {
     transform: translateY(-3px);
 }
+    *?
 
 .footer-socials button:active
 {
@@ -314,7 +317,37 @@ footer
 
 /*  FOOTER BUTTON EFFECTS */
 
-.footer-socials button
+footer-socials button
+{
+    margin: 5px;
+    padding: 10px 20px;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.3s ease,
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+.footer-socials button:hover
+{
+    transform: translateY(-3px);
+
+    background-color: #45494c;
+
+    box-shadow: 0 4px 12px rgba(255,255,255,0.15);
+}
+
+.footer-socials button:active
+{
+    transform: translateY(1px);
+
+    /* slightly darker when pressed */
+    background-color: #1d1f20;
+}
+
+/* .footer-socials button
 {
     transition:
         transform 0.3s ease,
@@ -327,6 +360,30 @@ footer
 }
 
 .footer-socials button:active
+{
+    transform: translateY(1px);
+} */
+
+button
+{
+    cursor: pointer;
+
+    transition:
+        transform 0.3s ease,
+        background-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+button:hover
+{
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 0 10px rgba(255,255,255,0.2),
+        0 0 20px rgba(255,255,255,0.1);
+}
+
+button:active
 {
     transform: translateY(1px);
 }
