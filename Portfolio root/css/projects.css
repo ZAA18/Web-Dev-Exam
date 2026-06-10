@@ -82,13 +82,25 @@ body
 
 /* ================= BUTTONS ================= */
 
-.button-group
+/*.button-group
 {
     display: flex;
     justify-content: center;
     gap: 10px;
 
     margin-top: auto;
+
+    flex-wrap: wrap;
+}
+    */
+
+    .button-group
+{
+    margin-top: 15px;
+
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 
     flex-wrap: wrap;
 }

@@ -5,7 +5,7 @@ body
     font-optical-sizing: auto;
 }
 
-/* ================= CONTAINER ================= */
+/*  CONTAINER  */
 
 .contact-container
 {
@@ -20,7 +20,7 @@ body
     font-size: 36px;
 }
 
-/* ================= GRID (FIXED ORDER - NO SWAPPING) ================= */
+/*  GRID (FIXED ORDER - NO SWAPPING) */
 
 .contact-grid
 {
@@ -32,7 +32,7 @@ body
     gap: 25px 100px;
 }
 
-/* ================= FORM GROUP ================= */
+/* FORM GROUP */
 
 .form-group
 {
@@ -46,7 +46,7 @@ body
     font-size: 14px;
 }
 
-/* 🔥 FIX: prevents layout shift + keeps alignment stable */
+
 .form-group input
 {
     width: 50%;
@@ -63,7 +63,7 @@ body
     box-sizing: border-box;
 }
 
-/* ================= MESSAGE ================= */
+/* MESSAGE */
 
 .message-group
 {
@@ -80,7 +80,7 @@ body
 
 .message-group textarea
 {
-    width: 100%;
+    width: 80%;
     height: 220px;
 
     border: none;
@@ -93,7 +93,7 @@ body
     box-sizing: border-box;
 }
 
-/* ================= VALIDATION ================= */
+ /* VALIDATION  */
 
 .error
 {
@@ -101,6 +101,9 @@ body
     font-size: 12px;
     margin-top: 5px;
     min-height: 15px;
+
+    user-select: none;
+    pointer-events: none;
 }
 
 .valid
@@ -113,7 +116,7 @@ body
     border: 2px solid red !important;
 }
 
-/* ================= BUTTON ================= */
+/* BUTTON */
 
 .submit-container
 {
@@ -143,7 +146,7 @@ body
     transform: scale(1.05);
 }
 
-/* ================= FOOTER ================= */
+/*  FOOTER  */
 
 footer
 {
@@ -173,7 +176,7 @@ footer
     padding:10px 20px;
 }
 
-/* ================= RESPONSIVE ONLY (STACK ON PHONE) ================= */
+/*  RESPONSIVE ONLY ( PHONE)  */
 
 @media (max-width: 600px)
 {
