@@ -1,45 +1,57 @@
-body{
-    font-family:"Roboto", sans-serif;
-    font-size: large;
-    background-color: #f39530 ;
+/* ================= BASE ================= */
+
+body
+{
+    font-family: "Roboto", sans-serif;
+    font-size: clamp(14px, 1.2vw, 18px);
+
+    background-color: #f39530;
     color: #151718;
 }
 
-img{
+img
+{
     max-width: 100%;
     height: auto;
 }
 
-.about{
-width: 100%;
-margin-top: 50px;
+/* ================= ABOUT HEADER ================= */
+
+.about
+{
+    width: 100%;
+    margin-top: clamp(30px, 5vw, 60px);
 }
 
-.about h1{
-text-align: center;
-margin-bottom: 50px;
+.about h1
+{
+    text-align: center;
+    margin-bottom: clamp(20px, 5vw, 50px);
+
+    font-size: clamp(2rem, 4vw, 3rem);
 }
 
-.about-container{
-display: flex;
+/* ================= MAIN LAYOUT ================= */
 
-justify-content: center;
-align-items: flex-start;
+.about-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-gap: 80px;
+    flex-wrap: wrap; /* 🔥 allows auto stacking */
 
-width: 90%;
-max-width: 1200px;
+    gap: clamp(30px, 5vw, 80px);
 
-margin: 0 auto;
-
+    width: min(1200px, 90%);
+    margin: 0 auto;
 }
 
+/* ================= PROFILE IMAGE ================= */
 
 .profile-container
 {
     flex-shrink: 0;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,8 +59,8 @@ margin: 0 auto;
 
 .profile-container img
 {
-    width: 380px;
-    height: 380px;
+    width: clamp(220px, 30vw, 380px);
+    height: clamp(220px, 30vw, 380px);
 
     object-fit: cover;
     object-position: center;
@@ -75,194 +87,72 @@ margin: 0 auto;
         0 0 90px var(--profile-glow);
 }
 
-.about-text{
-/* width: 700px; */
-flex: 1;
+/* ================= TEXT ================= */
+
+.about-text
+{
+    flex: 1;
+    min-width: 280px;
+    text-align: left;
 }
 
-.about-text p{
-margin-bottom: 30px;
-line-height: 1.8;
+.about-text p
+{
+    margin-bottom: 30px;
+    line-height: 1.8;
 }
 
-/* Career Goals */
+/* ================= CAREER GOALS ================= */
 
 .career-goals
 {
-text-align: center;
-
-margin-top: 60px;
-
+    text-align: center;
+    margin-top: clamp(40px, 6vw, 60px);
 }
 
-.career-goals p{
-max-width: 900px;
-
-margin: 0 auto;
-
-}
-
-/* Skills */
-
-.skills{
-text-align: center;
-
-margin-top: 60px;
-
-}
-
-.skills ul{ 
-display: inline-block;
-
-text-align: left;
-
-margin-top: 20px;
-
-}
-
-/* Footer */
-
-footer{
-    text-align:center;
-
-    margin-top:80px;
-
-    padding:30px;
-
-    border-top:1px solid #ccc;
-}
-
-.footer-socials{
-    margin:20px 0;
-}
-
-.footer-socials button{
-    margin:5px;
-    padding:10px 20px;
-}
-
-@media (max-width: 768px)
+.career-goals p
 {
-    .about-container
-    {
-        flex-direction: column;
-
-        align-items: center;
-
-        gap: 30px;
-    }
-
-    .profile-container img
-    {
-        width: 100%;
-        max-width: 350px;
-
-        height: auto;
-    }
-
-    .about-text
-    {
-        width: 100%;
-
-        max-width: 350px;
-
-        text-align: center;
-    }
-
-    .about h1
-    {
-        font-size: 2rem;
-    }
-
-    .about-text p
-    {
-        line-height: 1.6;
-    }
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-/* Small Tablets */
-@media (min-width: 769px) and (max-width: 992px)
+/* ================= SKILLS ================= */
+
+.skills
 {
-    .about-container
-    {
-        gap: 40px;
-        padding: 0 30px;
-    }
-
-    .profile-container img
-    {
-        width: 350px;
-        height: auto;
-    }
-
-    .about-text
-    {
-        max-width: 450px;
-    }
-
-    .about h1
-    {
-        font-size: 2.5rem;
-    }
-
-    .about-text p
-    {
-        font-size: 1.05rem;
-        line-height: 1.7;
-    }
+    text-align: center;
+    margin-top: clamp(40px, 6vw, 60px);
 }
 
-/* Large Tablets */
-@media (min-width: 768px) and (max-width: 1200px)
+.skills ul
 {
-    .about-container
-    {
-        gap: 50px;
-        padding: 0 40px;
-    }
-
-    .profile-container img
-    {
-        width: 400px;
-        height: auto;
-    }
-
-    .about-text
-    {
-        max-width: 500px;
-    }
-
-    .about h1
-    {
-        font-size: 3rem;
-    }
-
-    .about-text p
-    {
-        font-size: 1.1rem;
-        line-height: 1.8;
-    }
+    display: inline-block;
+    text-align: left;
+    margin-top: 20px;
 }
 
-@media (min-width: 1201px) and (max-width: 1440px)
+/* ================= FOOTER ================= */
+
+footer
 {
-    .about-container
-    {
-        gap: 60px;
-    }
+    text-align: center;
+    margin-top: 80px;
+    padding: clamp(20px, 4vw, 40px);
+    border-top: 1px solid #ccc;
+}
 
-    .profile-container img
-    {
-        width: 450px;
-    }
+.footer-socials
+{
+    margin: 20px 0;
 
-    .about h1
-    {
-        font-size: 3.2rem;
-    }
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
 
-    .about-text
-    {
-        max-width: 550px;
-    }
+.footer-socials button
+{
+    margin: 5px;
+    padding: 10px 20px;
 }

@@ -5,10 +5,11 @@ body
     font-optical-sizing: auto;
 }
 
+/* ================= CONTAINER ================= */
+
 .contact-container
 {
-    width: 90%;
-    max-width: 900px;
+    width: min(90%, 900px);
     margin: 40px auto;
 }
 
@@ -19,12 +20,19 @@ body
     font-size: 36px;
 }
 
+/* ================= GRID (FIXED ORDER - NO SWAPPING) ================= */
+
 .contact-grid
 {
     display: grid;
+
+    /* 🔥 FIX: keeps strict 2-column layout like your original */
     grid-template-columns: repeat(2, 1fr);
+
     gap: 25px 100px;
 }
+
+/* ================= FORM GROUP ================= */
 
 .form-group
 {
@@ -38,15 +46,24 @@ body
     font-size: 14px;
 }
 
+/* 🔥 FIX: prevents layout shift + keeps alignment stable */
 .form-group input
 {
-    width: 50%;
+    width: 100%;
+
+    max-width: 100%;
+
     height: 40px;
+
     border: none;
     background: #d9d9d9;
+
     padding-left: 10px;
+
     box-sizing: border-box;
 }
+
+/* ================= MESSAGE ================= */
 
 .message-group
 {
@@ -59,21 +76,25 @@ body
 {
     margin-bottom: 8px;
     font-size: 14px;
-
 }
 
 .message-group textarea
 {
     width: 100%;
     height: 220px;
+
     border: none;
     background: #d9d9d9;
+
     resize: none;
+
     padding: 10px;
+
     box-sizing: border-box;
 }
 
-/* error messgae css */
+/* ================= VALIDATION ================= */
+
 .error
 {
     color: red;
@@ -92,7 +113,7 @@ body
     border: 2px solid red !important;
 }
 
-/* error messgae css */
+/* ================= BUTTON ================= */
 
 .submit-container
 {
@@ -105,20 +126,24 @@ body
 {
     display: block;
     margin: 25px auto 0;
+
     width: 110px;
     height: 40px;
+
     border: none;
     border-radius: 10px;
-    cursor: pointer;
-}
 
+    cursor: pointer;
+
+    transition: transform 0.3s ease;
+}
 
 #submitBtn:hover
 {
     transform: scale(1.05);
 }
 
-/* Footer */
+/* ================= FOOTER ================= */
 
 footer
 {
@@ -134,6 +159,12 @@ footer
 .footer-socials
 {
     margin:20px 0;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 10px;
 }
 
 .footer-socials button
@@ -142,7 +173,9 @@ footer
     padding:10px 20px;
 }
 
-@media (max-width: 768px)
+/* ================= RESPONSIVE ONLY (STACK ON PHONE) ================= */
+
+@media (max-width: 600px)
 {
     .contact-container
     {
@@ -162,14 +195,8 @@ footer
         gap: 20px;
     }
 
-    .form-group input
-    {
-        width: 50%;
-    }
-
     .message-group textarea
     {
-        width: 100%;
         height: 180px;
     }
 
@@ -186,9 +213,7 @@ footer
 
     .footer-socials
     {
-        display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 10px;
     }
 }
