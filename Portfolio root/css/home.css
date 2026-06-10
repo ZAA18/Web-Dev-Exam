@@ -158,44 +158,6 @@ body
     transform: translateY(1px);
 }
 
-/* FOOTER */
-
-footer
-{
-    text-align: center;
-    margin-top: 80px;
-    padding: clamp(20px, 4vw, 40px);
-    border-top: 1px solid #ccc;
-}
-
-.footer-socials
-{
-    margin: 20px 0;
-
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.footer-socials button
-{
-    padding: 10px 20px;
-    cursor: pointer;
-
-    transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.footer-socials button:hover
-{
-    transform: translateY(-3px);
-}
-
-.footer-socials button:active
-{
-    transform: translateY(1px);
-}
-
 /*  REVEAL EFFECTS  */
 
 .hero,
@@ -310,6 +272,45 @@ footer
 {
     transform: translateY(1px);
 }
+
+/* FOOTER */
+
+footer
+{
+    text-align: center;
+    margin-top: 80px;
+    padding: clamp(20px, 4vw, 40px);
+    border-top: 1px solid #ccc;
+}
+
+.footer-socials
+{
+    margin: 20px 0;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.footer-socials button
+{
+    padding: 10px 20px;
+    cursor: pointer;
+
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.footer-socials button:hover
+{
+    transform: translateY(-3px);
+}
+
+.footer-socials button:active
+{
+    transform: translateY(1px);
+}
+
 
 /*  FOOTER BUTTON EFFECTS */
 
