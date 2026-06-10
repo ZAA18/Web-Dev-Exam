@@ -3,7 +3,7 @@ let aboutPath;
 let projectsPath;
 let contactPath;
 
-// Check if we're inside the Pages folder
+// ching if inside the Pages folder
 if (window.location.pathname.includes("/Pages/"))
 {
     homePath = "../../index.html";
@@ -13,7 +13,7 @@ if (window.location.pathname.includes("/Pages/"))
 }
 else
 {
-    // We are on index.html
+    //  on index.html
     homePath = "index.html";
     aboutPath = "Portfolio root/Pages/about.html";
     projectsPath = "Portfolio root/Pages/projects.html";
