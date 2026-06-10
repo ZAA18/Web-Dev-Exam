@@ -57,11 +57,11 @@ body
 
     height: 48px;
 
-    border: 1px solid #dcdcdc;
+    border: 1px solid #FBFFFF;
 
     border-radius: 10px;
 
-    background: #f8f8f8;
+    background: #FBFFFF;
 
     padding: 0 15px;
 
@@ -89,11 +89,11 @@ body
 
     height: 220px;
 
-    border: 1px solid #dcdcdc;
+    border: 1px solid #FBFFFF;
 
     border-radius: 10px;
 
-    background: #f8f8f8;
+    background:  #FBFFFF;
 
     padding: 15px;
 
@@ -145,9 +145,9 @@ body
     
         border-radius: 12px;
     
-        background: #1f2937;
+        background: #151718;
     
-        color: white;
+        color: #FBFFFF;
     
         font-size: 16px;
         font-weight: 600;
@@ -172,7 +172,7 @@ footer
 
     padding:30px;
 
-    border-top:1px solid #ccc;
+    border-top:1px solid  #FBFFFF;
 }
 
 .footer-socials
@@ -222,7 +222,8 @@ footer
 input::placeholder,
 textarea::placeholder
 {
-    color:  #f39530;;
+    color:  #151718;
+    font-size: 10;
 }
 
 .response-note
